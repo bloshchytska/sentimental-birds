@@ -15,9 +15,9 @@ tar -xvf kafka-connect-twitter-0.2-SNAPSHOT.tar.gz
 
 * confluent platform docker images: https://github.com/confluentinc/cp-docker-images
 
-* Change docker compose file in /examples/cp-all-in-one:
-- Add plugins path: CONNECT_PLUGIN_PATH: '/usr/share/java'
-- Add volume with twitter plugin
+Change docker compose file in /examples/cp-all-in-one:
+1. Add plugins path: CONNECT_PLUGIN_PATH: '/usr/share/java'
+2. Add volume with twitter plugin
 
 ```
   connect:
