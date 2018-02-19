@@ -4,7 +4,7 @@ Sentimental analysis and visualization on Twitter streams.
 
 # prerequisites
 
-## kafka-connect-twitter plugin: https://github.com/jcustenborder/kafka-connect-twitter
+* kafka-connect-twitter plugin: https://github.com/jcustenborder/kafka-connect-twitter
 
 ```
 cd kafka-connect-twitter
@@ -13,11 +13,11 @@ cd target
 tar -xvf kafka-connect-twitter-0.2-SNAPSHOT.tar.gz
 ```
 
-## confluent platform docker images: https://github.com/confluentinc/cp-docker-images
+* confluent platform docker images: https://github.com/confluentinc/cp-docker-images
 
-## Change docker compose file in /examples/cp-all-in-one:
-* Add plugins path: CONNECT_PLUGIN_PATH: '/usr/share/java'
-* Add volume with twitter plugin
+* Change docker compose file in /examples/cp-all-in-one:
+- Add plugins path: CONNECT_PLUGIN_PATH: '/usr/share/java'
+- Add volume with twitter plugin
 
 ```
   connect:
